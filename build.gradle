@@ -1,0 +1,132 @@
+
+plugins {
+	id 'com.cookpad.android.plugin.license-tools' version '1.2.5'
+	id 'java'
+	id 'maven-publish'
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	// implementation 'org.slf4j:slf4j-api:1.7.25'
+	compile 'org.jooq:jooq:3.14.4'
+	compile 'org.jooq:jooq-meta:3.14.4'
+	compile'org.jooq:jooq-codegen:3.14.4'
+	implementation 'com.squareup:javapoet:1.13.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+}
+
+group = 'ws.nzen.format.jq'
+version = '0.0_alpha_0.0'
+description = 'xxxxxx'
+
+compileJava {
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+}
+
+sourceCompatibility = '1.8'
+
+licenseTools {
+	outputJson = "cookpad-license-report-flat.json"
+}
+
+java {
+	withSourcesJar()
+}
+
+jar {
+	manifest {
+		attributes(
+			//'Main-Class' : 'ws.nzen.format.jq.tkg.xxxx',
+			'Automatic-Module-Name' : 'ws.nzen.format.jq.tkg',
+			'Class-Path': configurations.runtime.collect { it.getName() }.join( ' ' )
+		)
+	}
+	from "LICENSE"
+}
+
+/*
+task run( type : JavaExec ) {
+	dependsOn jar
+	classpath files( jar.archivePath )
+	main = 'ws.nzen.format.jq xxxxx'
+}
+
+run {
+	mainClassName = 'ws.nzen.format.jq.tkg. xxx'
+}
+*/
+
+
+publishing {
+	publications {
+		maven( MavenPublication ) {
+			from( components.java )
+			pom {
+				name = project.name
+				inceptionYear = '2021'
+				url = ''
+				packaging = 'jar'
+				licenses {
+					license {
+						name = ''
+						url = ''
+					}
+				}
+				developers {
+					developer {
+						id = ''
+						name = ''
+						email = ''
+					}
+				}
+				/*
+				scm {
+					connection = ''
+					developerConnection = ''
+					url = ''
+				}
+				*/
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

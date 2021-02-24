@@ -1,0 +1,40 @@
+
+= issue 210223_2216
+
+== Implement (spring) CrudRepository methods
+
+* assignee : Nicholas Prado
+* status : in progress
+* priority : high
+
+Implement findById, et al, so I do not need to type the boilerplate.
+
+////
+== comments
+
+=== yyMMdd hhMM zzz
+
+comment author : 
+
+comment_here
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
