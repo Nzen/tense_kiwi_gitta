@@ -1,0 +1,89 @@
+{
+	"libraries": [
+		{
+			"artifactId": {
+				"name": "jooq-codegen",
+				"group": "org.jooq",
+				"version": "+"
+			},
+			"license": "Apache License, Version 2.0",
+			"licenseUrl": "http://www.jooq.org/inc/LICENSE.txt",
+			"normalizedLicense": "apache2",
+			"libraryName": "jooq-codegen"
+		},
+		{
+			"artifactId": {
+				"name": "jooq-meta",
+				"group": "org.jooq",
+				"version": "+"
+			},
+			"license": "Apache License, Version 2.0",
+			"licenseUrl": "http://www.jooq.org/inc/LICENSE.txt",
+			"normalizedLicense": "apache2",
+			"libraryName": "jooq-meta"
+		},
+		{
+			"artifactId": {
+				"name": "jooq",
+				"group": "org.jooq",
+				"version": "+"
+			},
+			"license": "Apache License, Version 2.0",
+			"licenseUrl": "http://www.jooq.org/inc/LICENSE.txt",
+			"normalizedLicense": "apache2",
+			"libraryName": "jooq"
+		},
+		{
+			"artifactId": {
+				"name": "reactive-streams",
+				"group": "org.reactivestreams",
+				"version": "+"
+			},
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/",
+			"normalizedLicense": "cc0",
+			"url": "http://www.reactive-streams.org/",
+			"libraryName": "reactive-streams"
+		},
+		{
+			"artifactId": {
+				"name": "jaxb-api",
+				"group": "javax.xml.bind",
+				"version": "+"
+			},
+			"normalizedLicense": "",
+			"libraryName": "jaxb-api"
+		},
+		{
+			"artifactId": {
+				"name": "javax.activation-api",
+				"group": "javax.activation",
+				"version": "+"
+			},
+			"normalizedLicense": "",
+			"libraryName": "javax.activation-api"
+		},
+		{
+			"artifactId": {
+				"name": "commons-lang3",
+				"group": "org.apache.commons",
+				"version": "+"
+			},
+			"normalizedLicense": "",
+			"url": "https://commons.apache.org/proper/commons-lang/",
+			"libraryName": "commons-lang3"
+		},
+		{
+			"artifactId": {
+				"name": "javapoet",
+				"group": "com.squareup",
+				"version": "+"
+			},
+			"license": "Apache 2.0",
+			"licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+			"normalizedLicense": "apache2",
+			"url": "http://github.com/square/javapoet/",
+			"libraryName": "javapoet"
+		}
+	]
+}

@@ -14,15 +14,16 @@ dependencies {
 	// implementation 'org.slf4j:slf4j-api:1.7.25'
 	compile 'org.jooq:jooq:3.14.4'
 	compile 'org.jooq:jooq-meta:3.14.4'
-	compile'org.jooq:jooq-codegen:3.14.4'
+	compile 'org.jooq:jooq-codegen:3.14.4'
+	implementation 'org.apache.commons:commons-lang3:3.11'
 	implementation 'com.squareup:javapoet:1.13.0'
 	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.2'
 }
 
 group = 'ws.nzen.format.jq'
-version = '0.0_alpha_0.0'
-description = 'xxxxxx'
+version = '0.0_alpha_1.0'
+description = 'Jooq java generator for spring CrudRepository'
 
 compileJava {
 	sourceCompatibility = 1.8
@@ -42,26 +43,11 @@ java {
 jar {
 	manifest {
 		attributes(
-			//'Main-Class' : 'ws.nzen.format.jq.tkg.xxxx',
-			'Automatic-Module-Name' : 'ws.nzen.format.jq.tkg',
 			'Class-Path': configurations.runtime.collect { it.getName() }.join( ' ' )
 		)
 	}
 	from "LICENSE"
 }
-
-/*
-task run( type : JavaExec ) {
-	dependsOn jar
-	classpath files( jar.archivePath )
-	main = 'ws.nzen.format.jq xxxxx'
-}
-
-run {
-	mainClassName = 'ws.nzen.format.jq.tkg. xxx'
-}
-*/
-
 
 publishing {
 	publications {
@@ -70,26 +56,26 @@ publishing {
 			pom {
 				name = project.name
 				inceptionYear = '2021'
-				url = ''
+				url = 'https://github.com/Nzen/tense_kiwi_gitta'
 				packaging = 'jar'
 				licenses {
 					license {
-						name = ''
-						url = ''
+						name = 'Apache v2.0'
+						url = 'https://www.apache.org/licenses/LICENSE-2.0'
 					}
 				}
 				developers {
 					developer {
-						id = ''
-						name = ''
-						email = ''
+						id = 'Nzen'
+						name = 'Nicholas Prado'
+						email = 'nmprado@nzen.ws'
 					}
 				}
 				/*
 				scm {
-					connection = ''
-					developerConnection = ''
-					url = ''
+					connection = 'https://github.com/Nzen/tense_kiwi_gitta'
+					developerConnection = 'git@github.com:Nzen/tense_kiwi_gitta.git'
+					url = 'https://github.com/Nzen/tense_kiwi_gitta'
 				}
 				*/
 			}
